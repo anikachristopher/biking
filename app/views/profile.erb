@@ -1,0 +1,9 @@
+<h2>Hey <%=@user.username.upcase %></h2>
+<h5>all events will post here </h5>
+<% @user.events.each.with_index(1) do |event, index| %>
+ <%=“#{index})“%>  <a href=“/events/<%=event.id %>“><%=event.date %></a>
+ <br>
+ <% end %>
+ <p><a href=“/events/new”>Create a new Event</a></p>
+<a href=“/signout”>Sign Out</a> (edited) 
+

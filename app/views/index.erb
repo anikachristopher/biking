@@ -1,0 +1,9 @@
+<h1>Your events page!</h1>
+<p> Please <a href=“/signup”>Sign Up</a> or <a href=“/login”>Log In</a> to start.</p>
+<p> All events are listed ob this page. </p>
+<% Event.all.each do |event| %>
+    <ul>
+    <li><a href=“/events/<%=event.id %>“> <%= event.date %> </a>, by <%= event.user.username %>
+    </li>
+    </ul>
+ <% end %>
