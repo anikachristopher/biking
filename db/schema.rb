@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20200225045032) do
     t.datetime "date"
     t.string   "location"
     t.datetime "time"
+    t.integer  "user_id"
   end
 
   create_table "users", force: :cascade do |t|
