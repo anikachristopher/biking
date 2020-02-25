@@ -1,0 +1,14 @@
+<h1>Event created---</h1>
+<h2>Event num: <%= @event.id %></h2>
+<h2>Location: <%= @event.location %></h2>
+<h5>Description: <%= @event.date %></h5>
+<h3>Content: <%= @event.time %></h3>
+<form method=“post” action=“/events/<%= @event.id %>“>
+<input id=“hidden” type=“hidden” name=“_method” value=“DELETE”>
+<input type=“submit” value=“delete”>
+</form>
+<a href=“/poems/<%= @event.id %>/edit”>edit event</a>
+<br>
+<a href=“/profile”>back to profile</a>
+<br>
+<a href=“/”>Home </a>

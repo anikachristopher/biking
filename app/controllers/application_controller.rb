@@ -1,5 +1,3 @@
-require './config/environment'
-
 class ApplicationController < Sinatra::Base
 
   configure do
@@ -26,5 +24,11 @@ class ApplicationController < Sinatra::Base
       unless logged_in?
         redirect '/login'
     end
+  end
+
+  def current_user
+    User.find(session[:user_id])
+  end
+end
 
 end
