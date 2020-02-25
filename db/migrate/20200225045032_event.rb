@@ -1,4 +1,7 @@
 class Event < ActiveRecord::Migration
   def change
-  end
+    create_table :events do |t|
+      t.date :date
+      t.string :location
+      t.time :time
 end
