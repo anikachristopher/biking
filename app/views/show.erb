@@ -3,12 +3,12 @@
 <h2>Location: <%= @event.location %></h2>
 <h5>Description: <%= @event.date %></h5>
 <h3>Content: <%= @event.time %></h3>
-<form method=“post” action=“/events/<%= @event.id %>“>
-<input id=“hidden” type=“hidden” name=“_method” value=“DELETE”>
-<input type=“submit” value=“delete”>
+<form method="post" action="/events/<%= @event.id %>">
+<input id="hidden" type="hidden” name="_method” value="DELETE">
+<input type="submit" value="delete">
 </form>
-<a href=“/poems/<%= @event.id %>/edit”>edit event</a>
+<a href="/poems/<%= @event.id %>/edit">edit event</a>
 <br>
-<a href=“/profile”>back to profile</a>
+<a href="profile">back to profile</a>
 <br>
-<a href=“/”>Home </a>
+<a href="/">Home </a>
