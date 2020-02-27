@@ -1,8 +1,8 @@
 <h3>Edit Your Event</h3>
 <form action="/events/<%= @event.id%>" method="POST">
 <input type="hidden" name="_method" value="patch">
-  <input type="text" name="date" placeholder="Date:">
-  <input type="text" name="location" placeholder="Time:">
+  <input type="text" name="date" value="<%= @event.date %>" placeholder="Date:">
+  <input type="text" name="location" value="<%= @event.location %>" placeholder="Location:">
   <br>
   <br>
   <input type="submit" value="edit">
