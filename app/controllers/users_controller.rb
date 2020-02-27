@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     end
 
     post '/signup' do
-        @user = user.new(user_params)
+        @user = User.new(user_params)
         if @user.save 
             redirect '/' 
         else 

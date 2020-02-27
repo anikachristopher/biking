@@ -1,6 +1,6 @@
-Mountain Bike Club App
+Biking Club App
 
-Welcome to the Mountain Bike Club Application!
+Welcome to the Biking Club Application!
 
 This application allows avid mountain bike riding enthusiasts to join their fellow colleagues of all age groups in participating in different events in a variety of locations.
 

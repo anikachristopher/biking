@@ -70,7 +70,7 @@ class EventsController < ApplicationController
         private 
 
     def event_params
-        {date: params[:date], location: params[:location], time: params[:time]}
+        {date: params[:datetime], location: params[:location], time: params[:timestamp]}
     end
 
     end
