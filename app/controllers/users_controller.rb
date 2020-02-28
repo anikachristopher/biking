@@ -6,7 +6,8 @@ class UsersController < ApplicationController
     post '/signup' do
         @user = User.new(user_params)
         if @user.save 
-            redirect '/' 
+            session[:user_id] = @user.id 
+            redirect '/profile' 
         else 
             @errors = ["Please enter the required information"]
             erb :failure
