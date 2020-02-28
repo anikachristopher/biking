@@ -2,7 +2,6 @@
 <h2>Event num: <%= @event.id %></h2>
 <h2>Location: <%= @event.location %></h2>
 <h5>Date: <%= @event.date %></h5>
-<h3>Time: <%= @event.time %></h3>
 <form method="post" action="/events/<%= @event.id %>">
 <input id="hidden" type="hidden" name="_method" value="DELETE">
 <input type="submit" value="delete">
