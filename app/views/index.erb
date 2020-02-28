@@ -1,12 +1,13 @@
 <h1>Your Events</h1>
-<p> Please Log In To A <a href="/signup">Signup</a> or <a href="/login">Login</a> to start.</p>
+<p> <a href="/signup">Signup</a> or <a href="/login">Login</a> to start.</p>
 <p> All events are listed on this page. </p>
 <% Event.all.each do |event| %>
     <ul>
-    <li><a href="/events/<%=event.id %>"> <%= event.date %> </a>, by <%= event.user.username %>
+    <li><a href="/events/<%=event.id %>"> <%= event.date %> </a> by <%= event.user.username %>
     </li>
     </ul>
  <% end %>
-
+ <br>
  <a href="/profile">Profile</a>
+ <br>
  <a href="/signout">Sign Out</a>

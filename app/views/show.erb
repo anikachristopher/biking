@@ -1,4 +1,4 @@
-<h1>Event created---</h1>
+<h1>Event Created</h1>
 <h2>Event num: <%= @event.id %></h2>
 <h2>Location: <%= @event.location %></h2>
 <h5>Date: <%= @event.date %></h5>
@@ -7,8 +7,9 @@
 <input id="hidden" type="hidden" name="_method" value="DELETE">
 <input type="submit" value="delete">
 </form>
-<a href="/events/<%= @event.id %>/edit">edit event</a>
 <br>
-<a href="/profile">back to profile</a>
+<a href="/events/<%= @event.id %>/edit">Edit Event</a>
+<br>
+<a href="/profile">Back to Profile</a>
 <br>
 <a href="/">Home </a>
