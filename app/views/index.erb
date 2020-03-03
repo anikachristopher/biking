@@ -2,7 +2,7 @@
 <p> All events are listed on this page. </p>
 <% Event.all.each do |event| %>
     <ul>
-    <li><a href="/events/<%=event.id %>"> <%= event.date %> </a> by <%= event.user.username %>
+    <li><a href="/events/<%=event.id %>"> <%= event.event_name %> - <%= event.date %> </a> by <%= event.user.username %>
     </li>
     </ul>
  <% end %>

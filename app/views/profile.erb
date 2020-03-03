@@ -1,7 +1,7 @@
 <h2>HEY <%=@user.username.upcase %></h2>
 <h5>YOUR EVENTS</h5>
 <% @user.events.each.with_index(1) do |event, index| %>
- <%="#{index})"%>  <a href="/events/<%=event.id %>"><%=event.date %></a>
+ <%="#{index})"%>  <a href="/events/<%=event.id %>"><%=event.event_name %> on <%=event.date %></a>
  <br>
  <% end %>
  <br>
