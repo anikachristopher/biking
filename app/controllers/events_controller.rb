@@ -15,10 +15,11 @@ class EventsController < ApplicationController
         @event = current_user.events.build(event_params)
         @event.user = User.find(session[:user_id])
         if @event.save
+            flash[:alert] = "Event Created!"
             erb :show
         else 
             event_params.nil? || event_params.empty?
-            @errors = ["Event is Invalid"]
+            flash[:alert] = "Event is Invalid"
             erb :failure
         end
     end
@@ -70,7 +71,7 @@ class EventsController < ApplicationController
         private 
 
     def event_params
-        {date: params[:date], location: params[:location]}
+        {date: params[:date], location: params[:location], event_name: params[:event_name]}
     end
 
     end
